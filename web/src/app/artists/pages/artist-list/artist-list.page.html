@@ -1,0 +1,19 @@
+<h1>Artists</h1>
+
+<p *ngIf="profile$ | async as profile">Hello {{profile.name}}</p>
+
+<div class="flex">
+  <nav>
+    <div *ngIf="artistsFacade.loading$ | async">Loading...</div>
+
+    <div *ngFor="let artist of artistsFacade.artists$ | async">
+      <a [routerLink]="[artist.id]">
+        <img [src]="artist.img | imageUrl:artist.id" />
+        <h3>{{artist.name}}</h3>
+      </a>
+    </div>
+  </nav>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

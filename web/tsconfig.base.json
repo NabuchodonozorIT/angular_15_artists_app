@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "es2020",
+    "lib": ["es2020", "dom"],
+    "baseUrl": "./",
+    "paths": {
+      "api-client": ["api-client/src/index.ts"],
+      "common-ui": ["common-ui/src/index.ts"]
+    }
+  },
+  "exclude": ["tools/generators/**/files/**"]
+}

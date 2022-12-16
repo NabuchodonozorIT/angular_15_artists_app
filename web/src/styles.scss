@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+@layer base {
+}
+
+@layer components {
+  .btn {
+    @apply border
+    rounded
+    py-2 px-4;
+  }
+  .btn-outline {
+    @apply border
+    rounded
+    border-black
+    py-2 px-4;
+  }
+  .btn-primary {
+    @apply bg-primary
+    hover:bg-primary-light
+    border
+    text-white
+    rounded
+    border-black
+    py-2 px-4
+    disabled:bg-slate-300
+    disabled:border-slate-400;
+  }
+}
+
+@layer utilities {
+}
+
+// styles
+
+.ng-invalid.ng-touched {
+  @apply border-red-500;
+}

@@ -1,0 +1,10 @@
+<ng-content></ng-content>
+<hr>
+<h2>
+  Console <small>({{ items.length }})</small>
+</h2>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of items; let i = index">
+    {{ items.length - i }} - <b> {{ item.label }}</b> {{ item.item }}
+  </li>
+</ul>

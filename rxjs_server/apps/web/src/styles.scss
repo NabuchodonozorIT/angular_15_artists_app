@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+rxjs-list {
+  padding: 15px;
+  display: block;
+}
+rxjs-list mat-toolbar {
+  margin: -15px -15px 15px !important;
+  width: auto !important;
+}
+
+a.mat-list-item.active {
+  color: black;
+  font-weight: bold;
+}
+
+mat-form-field {
+  display: block !important;
+}
